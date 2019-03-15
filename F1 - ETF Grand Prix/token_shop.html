@@ -1,0 +1,257 @@
+<!-- Autor: Stefan Petrovic -->
+<html>
+	<head>
+		<title>F1 Ultimate Team - Token shop</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+		<meta charset="utf-8">
+		<style>
+			.gap-10 {
+				width:100%;
+				height:10px;
+			}
+			hr{ 
+				height: 1px;
+				color: red;
+				background-color: red;
+				border: none;
+			}
+			.form-popup {
+				display: none;
+				position: fixed;
+				bottom: 60px;
+				right: 15px;
+				border: 3px solid #f1f1f1;
+				z-index: 9;
+			}
+			.form-container {
+				max-width: 300px;
+				padding: 10px;
+				background-color: white;
+			}
+			.form-container input[type=text], .form-container input[type=password] {
+				width: 100%;
+				padding: 15px;
+				margin: 5px 0 22px 0;
+				border: none;
+				background: #f1f1f1;
+			}
+			.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+				background-color: #ddd;
+				outline: none;
+			}
+			.form-container .btn {
+				background-color: #4CAF50;
+				color: white;
+				padding: 16px 20px;
+				border: none;
+				cursor: pointer;
+				width: 100%;
+				margin-bottom:10px;
+				opacity: 0.8;
+			}
+			.form-container .cancel {
+				background-color: #dc3545;
+			}
+			.form-container .btn:hover, .open-button:hover {
+			opacity: 1;
+			}
+		</style>
+	</head>
+	<body style="background:#EEEEEE;" >
+		<header style="background : #343a40;">
+			<div class="header-contact">
+				<div class="media">
+					<div class="media-left" >
+						<img src="images/logo1.png" style="height:150px; width:200px">
+					</div>
+					<div class="media-body">
+						
+						<h1 style="letter-spacing:3px;color:white;  padding-left:10px; width:200px; font-family:Haettenschweiler; font-style:italic; font-variant:small-caps;">F1 ULTIMATE TEAM</h1>
+					</div>
+					<div class="media-right">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-6">
+								<img src="images/avatar-placeholder.jpg" hspace="5" vspace="5" height="150px"width="150px">
+							</div>
+							<div class="col-sm-6">
+								<div class="container">
+									<div class="row ">
+										<div class="col-sm-12 border-bottom border-secondary">
+											<font color="white">username</font>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-12 border-bottom border-secondary">
+											<font color="white">rank</font>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-12 border-bottom border-secondary">
+											<font color="gold">$</font><font color="white">1341341</font>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-12 border-bottom border-secondary">
+											<a href="login.html" color="gold">Log Out</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					</div>
+					
+				</div>
+				
+			</div>
+			<nav class="navbar navbar-expand-md bg-dark navbar-dark border-top border-bottom border-danger">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="collapsibleNavbar">
+					<ul class="navbar-nav">
+						<li class="nav-item active">
+							<a class="nav-link" href="index.html">Overview</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="token_shop.html">Token shop</a>
+						</li>
+						<li class="nav-item">
+							<div class="dropdown">
+								<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Store</button>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="store_fw.html">Front Wing</a>
+									<a class="dropdown-item" href="store_wheels.html">Wheels</a>
+									<a class="dropdown-item" href="store_eng.html">Engine</a>
+									<a class="dropdown-item" href="store_drv.html">Driver</a>
+									<a class="dropdown-item" href="store_mngr.html">Manager</a>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item">&nbsp;</li>
+						<li class="nav-item">
+							<a class="nav-link" href="trke.html">Tracks</a>
+						</li> 
+						<li class="nav-item">
+							<a class="nav-link" href="istorija.html">Race History</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		
+		<div class="container">
+		<p>&nbsp; &nbsp; &nbsp;</p>
+		<h3 align="center" class="border-bottom border-top border-danger"> <div class = "gap-10"></div> Token shop <div class = "gap-10"></div> </h3>
+		<p>&nbsp; &nbsp; &nbsp;</p>
+		</div>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="card" style="width: 18rem;">
+						<img class="card-img-top border-info rounded" src="images/pile.jpg" alt="Pile of money">
+						<div class="card-body">
+							<p class="card-text">
+							<div class="custom-control custom-radio">
+							<input type="radio" class="custom-control-input" id="t_option1" name="tokens">
+							<label class="custom-control-label" for="t_option1"><strong></strong></label>
+							</div>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="card" style="width: 18rem;">
+						<img class="card-img-top border-info rounded" src="images/sack.jpg" alt="Sack of money">
+						<div class="card-body">
+							<p class="card-text">
+							<div class="custom-control custom-radio">
+							<input type="radio" class="custom-control-input" id="t_option2" name="tokens">
+							<label class="custom-control-label" for="t_option2"><strong></strong></label>
+							</div>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="card" style="width: 18rem;">
+						<img class="card-img-top border-info rounded" src="images/chest.jpg" alt="Chest of money">
+						<div class="card-body">
+							<p class="card-text">
+							<div class="custom-control custom-radio">
+							<input type="radio" class="custom-control-input" id="t_option3" name="tokens">
+							<label class="custom-control-label" for="t_option3"><strong></strong></label>
+							</div>
+							</p>
+						</div>
+					</div>
+				</div>
+		</div>	
+		<p>&nbsp; &nbsp; &nbsp;</p>
+		<div class = "row">
+			<div class = "col-sm-3"> </div>
+			<div class="col-sm-6">
+					<div class="card" style="width: auto;">
+						<img class="card-img-top border-info rounded" src="images/special.jpg" alt="Special offer">
+						<div class="card-body">
+							<p class="card-text">
+							<div class="custom-control custom-radio">
+							<input type="radio" class="custom-control-input" id="t_option4" name="tokens">
+							<label class="custom-control-label" for="t_option4"><strong></strong></label>
+							</div>
+							</p>
+						</div>
+					</div>
+				</div>
+		</div>
+		&nbsp;
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4"> </div>
+				<div class="col-sm-4">
+					<button type="button" style="margin:auto; display:block;" class="btn btn-danger" onclick = "openForm()">Next</button>
+				</div>
+			</div>
+			<div class="form-popup" id="myForm">
+				<form action="/action_page.php" class="form-container">
+				<h1>Pay</h1>
+
+				<label for="credit_card_number"><b>Credit Card Number</b></label>
+				<input type="text" placeholder="Enter Credit Card Number" name="credit_card_number" required>
+
+				<label for="psw"><b>Password</b></label>	
+				<input type="password" placeholder="Enter Password" name="psw" required>
+
+				<button type="submit" class="btn" onclick = "payForm()">Pay</button>
+				<button type="submit" class="btn cancel" onclick="closeForm()">Cancel</button>
+				</form>
+			</div>
+		</div>
+		<hr>
+		<footer>
+			<table class="table table-dark">
+				<ul></ul>
+			</table>
+			<p style="text-align:center;"><i>Copyright &copy; 2019, Stefan Petrovic, Jelena Dumbelovic, Marko Milicevic, Jelena Cvetinovic, Odsek za softversko inzenjerstvo Elektrotehnickog fakulteta Univerziteta u Beogradu </i></p>
+			
+		</footer>
+		<script>
+		function openForm() {
+			document.getElementById("myForm").style.display = "block";
+		}
+
+		function closeForm() {
+			document.getElementById("myForm").style.display = "none";
+		}
+		
+		function payForm() {
+			window.location = 'index.html';
+		}
+		</script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" ></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	</body>
+</html>

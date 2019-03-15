@@ -1,0 +1,83 @@
+<!-- Autor: Stefan Petrovic -->
+<html>
+	<head>
+		<title>F1 Ultimate team - Register</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+		<style>
+			.responsive {
+			width: 100%;
+			height: auto;
+			}
+			#container { 
+			background-color: #F5F5DC;
+			}
+			.small{
+			width: 10%;
+			height: auto;
+			}
+			.center{
+			position: relative;
+			}
+			.containerv{
+			margin: 0;
+			position: absolute;
+			top: 25%;
+			left: 25%;
+			transform: translate(13%, 50%);
+			}
+			#input-group-text{
+			width: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div class = "center">
+			<div class="containerv">
+				<div class = "row">
+					<div class = "col-sm-5">
+					<img class = "responsive" src="images/logo.png" alt="Logo">
+					</div>
+				</div>
+				<div class = "row">
+					<div class = "col-sm-5">
+						<div class="input-group mb-2 mr-sm-2">
+							<div class="input-group-prepend">
+								<div class="input-group-text"><img class = "small" src = "images/user.png" alt = "User"></div>
+							</div>
+							<input type="text" class="form-control" id="username" placeholder="Enter username">
+						</div>
+					</div>
+				</div>
+				<div class = "row">
+					<div class = "col-sm-5">
+						<div class="input-group mb-2 mr-sm-2">
+							<div class="input-group-prepend">
+								<div class="input-group-text"><img class = "small" src = "images/pass.png" alt = "Password"></div>
+							</div>
+							<input type="password" class="form-control" id="password" placeholder="Enter password">
+						</div>
+					</div>	
+				</div>
+				<div class = "row">
+					<div class = "col-sm-5">
+						<div class="input-group mb-2 mr-sm-2">
+							<div class="input-group-prepend">
+								<div class="input-group-text"><img class = "small" src = "images/pass.png" alt = "Password"></div>
+							</div>
+							<input type="password" class="form-control" id="conf_password" placeholder="Confirm password">
+						</div>
+					</div>	
+				</div>
+				<div class = "row"> 
+						<div class = "col-sm-1"> </div>
+						<div class="col-sm-1">
+							<button type="button" class="btn btn-default" onclick="window.location.href='login.html'">Create</button>
+						</div>
+						<div class="col-sm-1">
+							<button type="button" class="btn btn-default" onclick="window.location.href='login.html'">Cancel</button>
+						</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

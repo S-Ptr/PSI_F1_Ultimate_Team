@@ -1,0 +1,172 @@
+<!-- Autor: Stefan Petrovic -->
+<html>
+	<head>
+		<title>F1 Ultimate Team - Qualifications</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+		<meta charset="utf-8">
+		<style>
+			.gap-10 {
+				width:100%;
+				height:10px;
+			}
+		</style>
+	</head>
+	<body style="background:#EEEEEE;" onload="ocisti()" >
+		<header style="background : #343a40;">
+			<div class="header-contact">
+				<div class="media">
+					<div class="media-left" >
+						<img src="images/logo1.png" style="height:150px; width:200px">
+					</div>
+					<div class="media-body">
+						
+						<h1 style="letter-spacing:3px;color:white;  padding-left:10px; width:200px; font-family:Haettenschweiler; font-style:italic; font-variant:small-caps;">F1 ULTIMATE TEAM</h1>
+					</div>
+					<div class="media-right">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-6">
+								<img src="images/avatar-placeholder.jpg" hspace="5" vspace="5" height="150px"width="150px">
+							</div>
+							<div class="col-sm-6">
+								<div class="container">
+									<div class="row ">
+										<div class="col-sm-12 border-bottom border-secondary">
+											<font color="white">username</font>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-12 border-bottom border-secondary">
+											<font color="white">rank</font>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-12 border-bottom border-secondary">
+											<font color="gold">$</font><font color="white">1341341</font>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-12 border-bottom border-secondary">
+											<a href="login.html" color="gold">Log Out</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					</div>
+					
+				</div>
+				
+			</div>
+			<nav class="navbar navbar-expand-md bg-dark navbar-dark border-top border-bottom border-danger">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="collapsibleNavbar">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Overview</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="token_shop.html">Token shop</a>
+						</li>
+						<li class="nav-item">
+							<div class="dropdown">
+								<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Store</button>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="store_fw.html">Front Wing</a>
+									<a class="dropdown-item" href="store_wheels.html">Wheels</a>
+									<a class="dropdown-item" href="store_eng.html">Engine</a>
+									<a class="dropdown-item" href="store_drv.html">Driver</a>
+									<a class="dropdown-item" href="store_mngr.html">Manager</a>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item">&nbsp;</li>
+						<li class="nav-item">
+							<a class="nav-link" href="trke.html">Tracks</a>
+						</li> 
+						<li class="nav-item active">
+							<a class="nav-link" href="istorija.html">Race History</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		
+		<div class="container">
+		<p>&nbsp;</p>
+		<h3 align="center" class="border-bottom border-top border-danger"><div class="gap-10"></div>Match History<div class="gap-10"></div></h3>
+		<p>&nbsp;</p>
+		</div>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="panel panel-primary" id="result_panel">
+						<div class="panel-heading"><h3 class="panel-title">Race Results</h3>
+						</div>
+						<div class="panel-body">
+							<ul class="list-group">
+								<li class="list-group-item">
+									<p>Red Bull Ring</p>
+									<p class="text-info">39:12</p>
+									<p class="text-secondary"><em>No Reward</em></p>
+								</li>
+								<li class="list-group-item" style="background-color:#c0c0c0">
+									<p>Red Bull Ring</p>
+									<p class="text-info">24:35</p>
+									<p class="text-warning">+$10000</p>
+								</li>
+								<li class="list-group-item" style="background-color:#b08d57">
+									<p>Baku City Circuit</p>
+									<p class="text-info">40:23</p>
+									<p class="text-warning">+$5000</p>
+								</li>
+								<li class="list-group-item">
+									<p>Baku City Circuit</p>
+									<p class="text-info">1:22:23</p>
+									<p class="text-secondary"><em>No Reward</em></p>
+								</li>
+								<li class="list-group-item">
+									<p>Autodromo Hermanos Rodriguez</p>
+									<p class="text-info">23:22</p>
+									<p class="text-secondary"><em>No Reward</em></p>
+								</li>
+								<li class="list-group-item">
+									<p>Autodromo Hermanos Rodriguez</p>
+									<p class="text-info">41:22</p>
+									<p class="text-secondary"><em>No Reward</em></p>
+								</li>
+								<li class="list-group-item">
+									<p>Autodromo Hermanos Rodriguez</p>
+									<p class="text-info">34:48</p>
+									<p class="text-secondary"><em>No Reward</em></p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+				<div class="col-sm-12">
+					<button type="button" style="margin:auto; display:block;" class="btn btn-danger" onclick = "location.href='index.html';">Back to Main</button>
+				</div>
+			</div>
+		
+		<hr>
+		<footer>
+			<table class="table table-dark">
+				<ul></ul>
+			</table>
+			<p style="text-align:center;"><i>Copyright &copy; 2019, Stefan Petrovic, Jelena Dumbelovic, Marko Milicevic, Jelena Cvetinovic, Odsek za softversko inzenjerstvo Elektrotehnickog fakulteta Univerziteta u Beogradu </i></p>
+			
+		</footer>
+	
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" ></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	</body>
+</html>
